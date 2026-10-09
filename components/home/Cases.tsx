@@ -104,7 +104,7 @@ export default function Cases() {
           </p>
 
           <a href="#contacto" className="text-link">
-            Ver más casos <span>→</span>
+            AGENDAR DIAGNÓSTICO <span>→</span>
           </a>
         </div>
       </div>
