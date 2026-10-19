@@ -4150,6 +4150,9 @@ a {
   }
 
   .brand-item {
+    flex: none;
+    min-width: 0;
+
     min-height: 94px;
 
     padding: 20px 12px;
@@ -4573,5 +4576,299 @@ a {
   .location-map-label {
     left: 16px;
     bottom: 16px;
+  }
+}
+
+/* =========================================================
+   MOBILE READABILITY PASS — 2026
+   ========================================================= */
+
+@media (max-width: 639px) {
+
+  /* ---------------------------------------------------------
+     GENERAL TEXT
+     --------------------------------------------------------- */
+
+  .hero-final-copy > p:not(.eyebrow),
+  .specialty-card p,
+  .tech-v2-intro > p:last-child,
+  .tech-v2-principle p,
+  .process-v2-content p,
+  .cases-v2-intro,
+  .case-v2-details > div > p,
+  .cases-v2-bottom > p,
+  .inspection-heading > p,
+  .inspection-item p,
+  .inspection-prepurchase p,
+  .brands-intro,
+  .brands-note,
+  .reasons-grid p,
+  .contact-band p,
+  .location-intro,
+  .location-detail > p,
+  .footer-brand p,
+  .footer-grid a,
+  .footer-grid span {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+
+  /* ---------------------------------------------------------
+     SMALL LABELS / EYEBROWS
+     --------------------------------------------------------- */
+
+  .eyebrow,
+  .section-kicker,
+  .inspection-eyebrow,
+  .inspection-prepurchase > span,
+  .inspection-number,
+  .case-v2-category,
+  .case-v2-details > div > span,
+  .location-detail > span,
+  .location-map-label span,
+  .contact-band-actions > div span,
+  .footer-grid h3 {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+
+  /* ---------------------------------------------------------
+     CARD TITLES
+     --------------------------------------------------------- */
+
+  .specialty-card h3,
+  .process-v2-content h3,
+  .inspection-item h3,
+  .reasons-grid h3 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+
+  /* ---------------------------------------------------------
+     TECHNOLOGY
+     --------------------------------------------------------- */
+
+  .tech-v2-principle strong {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .process-v2-number span {
+    font-size: 11px;
+  }
+
+  .tech-v2-capabilities-list > span {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 10px 12px;
+  }
+
+
+  /* ---------------------------------------------------------
+     CASES
+     --------------------------------------------------------- */
+
+  .case-v2-title > p {
+    font-size: 12px;
+  }
+
+  .case-v2-details > div > p {
+    font-size: 14px;
+  }
+
+  .case-v2-footer {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+
+  /* ---------------------------------------------------------
+     INSPECTION
+     --------------------------------------------------------- */
+
+  .inspection-item p,
+  .inspection-prepurchase p {
+    font-size: 14px;
+  }
+
+  .inspection-media-caption span {
+    font-size: 10px;
+  }
+
+  .inspection-media-caption p {
+    font-size: 18px;
+  }
+
+
+  /* ---------------------------------------------------------
+     BRANDS
+     --------------------------------------------------------- */
+
+  .brands-intro {
+    font-size: 14px;
+  }
+
+  .brands-note {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------------------------------------------------------
+     WHY US
+     --------------------------------------------------------- */
+
+  .why-photo-mobile .why-badge strong {
+    font-size: 17px;
+  }
+
+  .why-photo-mobile .why-badge p {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+
+  /* ---------------------------------------------------------
+     CONTACT
+     --------------------------------------------------------- */
+
+  .contact-band p {
+    font-size: 14px;
+  }
+
+  .contact-band-actions strong {
+    font-size: 22px;
+  }
+
+
+  /* ---------------------------------------------------------
+     LOCATION
+     --------------------------------------------------------- */
+
+  .location-intro,
+  .location-detail > p {
+    font-size: 14px;
+  }
+
+  .location-hours p,
+  .location-hours strong {
+    font-size: 13px;
+  }
+
+  .location-map-link {
+    font-size: 12px;
+  }
+
+  .location-map-label p {
+    font-size: 14px;
+  }
+
+
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+
+  .footer-brand p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .footer-grid h3 {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  .footer-grid a,
+  .footer-grid span {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+
+  /* ---------------------------------------------------------
+     BUTTONS / LINKS
+     --------------------------------------------------------- */
+
+  .button-primary,
+  .text-link,
+  .inspection-cta,
+  .location-map-link {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   MOBILE IMAGE VISIBILITY PASS — 2026
+   ========================================================= */
+
+@media (max-width: 639px) {
+
+  /* HERO — mantener contraste, pero recuperar detalle */
+  .hero-mobile-media img {
+    filter: brightness(1.12) contrast(1.03);
+  }
+
+  .hero-mobile-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5, 5, 5, 0.14),
+        transparent 38%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(5, 5, 5, 0.16),
+        transparent 45%
+      );
+  }
+
+
+  /* ESPECIALIDADES */
+  .specialty-photo {
+    filter: brightness(1.16) contrast(1.02);
+  }
+
+
+  /* WHY US / NOSOTROS */
+  .why-photo,
+  .why-photo-mobile {
+    filter: brightness(1.15) contrast(1.02);
+  }
+
+
+  /* INSPECTION */
+  .inspection-media img {
+    filter: brightness(1.14) contrast(1.02);
+  }
+
+
+  /* MAPA — hacerlo algo más claro en móvil */
+  .location-map iframe {
+    filter:
+      grayscale(1)
+      contrast(1.02)
+      brightness(0.92);
+  }
+
+  .location-map::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(7, 7, 7, 0.10),
+        transparent 30%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(7, 7, 7, 0.10),
+        transparent 38%
+      );
   }
 }
